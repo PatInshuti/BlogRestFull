@@ -1,0 +1,42 @@
+#indeximage{
+  width: 100%;
+  height: 60%;
+}
+i.icon{
+
+    font-size: 2em;
+}
+.container.main{
+  margin-top: 6em;
+  border: 1px solid purple;
+}
+
+.own.container {
+  margin-top: 3em;
+  width: 50%;
+  margin: 2em auto;
+  padding: 2em;
+  border:1px solid purple;
+  border-radius: 10px;
+  margin-bottom: 1px;
+  margin-top:70px;
+}
+
+#displayInline{
+    display:inline;
+}
+
+.card{
+  height: 510px;
+
+}
+.ui.grid{
+  margin: 0 auto;
+  margin-left: 12em;
+  width: 78%;
+  border-width: thick;
+
+
+}
+
+}

@@ -1,0 +1,41 @@
+<% include ./partials/header %>
+<img id="indeximage" alt="" src="https://static.wixstatic.com/media/84770f_5251001816154d3d9e793f346f9eca55~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_980,h_659,al_c,q_85,usm_0.66_1.00_0.01/84770f_5251001816154d3d9e793f346f9eca55~mv2_d_5472_3648_s_4_2.jpg">
+<div class="ui grid">
+  <% blogs.forEach(function(blog){ %>
+
+  <div class="five wide column">
+<div class="ui link cards">
+
+  <div class="card">
+      <div class="image">
+        <img src="<%= blog.image%>" height="300" width="300">
+      </div>
+      <div class="content">
+        <div class="header"><%= blog.title %></div>
+        <div class="meta">
+          <a>Friends</a>
+        </div>
+        <div class="description">
+          <% if(blog.body && blog.body.length > 0) { %>
+      <p><%= blog.body.substring(0, 200)%></p>
+      <% } %>
+        </div>
+      </div>
+      <div class="extra content">
+        <span class="right floated">
+
+          <%=blog.created.toDateString()%>
+        </span>
+        <span>
+          <a href="/blogs/<%=blog._id%>"><button class="ui purple basic button">Read More</button></a>
+        </span>
+      </div>
+    </div>
+</div>
+
+</div>
+<% }) %>
+</div>
+
+
+<% include ./partials/footer %>
